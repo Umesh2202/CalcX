@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=JetBrains+Mono:wght@700&display=swap");
+
+* {
+  font-family: "JetBrains Mono", monospace;
+}
+
+body {
+  background: linear-gradient(to right, #8b02fa, #fca205);
+  padding: 0;
+  margin: 0;
+}
+
+.heading {
+  position: absolute;
+  top: 8vh;
+  left: 20vw;
+  font-size: 115px;
+  color: antiquewhite;
+}
+
+.info {
+  display: inline;
+  position: absolute;
+}
+
+.info-icon {
+  width: 5%;
+  position: relative;
+  top: 10vh;
+  left: 65vw;
+}
+
+.info-box {
+  width: 321px;
+  height: 324px;
+  word-wrap: normal;
+  font-size: 30px;
+  position: absolute;
+  top: 35vh;
+  right: 15vw;
+  background-color: aliceblue;
+  border: black solid 2px;
+  border-radius: 10px;
+  opacity: 0;
+  box-shadow: 10px 5px 5px rgb(62, 61, 61);
+}
+
+.text {
+  padding: 21px;
+}
+
+.calc {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 90vh;
+  grid-template-columns: repeat(4, 120px);
+  grid-template-rows: minmax(120px, auto) repeat(6, 120px);
+  padding-top: 80px;
+}
+
+.calc > input {
+  cursor: pointer;
+  font-size: 40px;
+  background-color: rgba(87, 233, 223, 0.588);
+  outline: none;
+  border: 2px solid white;
+}
+
+.calc > input:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.two-space {
+  grid-column: span 2;
+}
+
+.result {
+  grid-column: 1 / -1;
+  background-color: rgba(37, 36, 38, 0.902);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 15px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.prev-exp {
+  color: rgba(128, 133, 138, 0.82);
+  font-size: 25px;
+}
+
+.crr-exp {
+  color: hwb(208 94% 0%);
+  font-size: 50px;
+}
